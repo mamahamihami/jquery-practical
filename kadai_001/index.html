@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyProfile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <!-- slickの読み込み -->
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+</head>
+
+<body>
+    <!-- TOPボタン -->
+    <button id="js-pagetop" class="pagetop">TOP</button>
+
+    <div class="wrapper">
+        <header>
+            <div>
+                <a class="rogo" href="index.html">MyProfile</a>
+                <nav>
+                    <a href="#about" class="nav_child">About</a>
+                    <a href="#works" class="nav_child">Works</a>
+                </nav>
+            </div>
+
+        </header>
+
+        <main>
+            <article>
+                <!-- カルーセル -->
+                <section id="carousel-section">
+                    <div class="main-img">
+                        <div>
+                            <img class="carousel-img" src="images/main.png" alt="趣味">
+                        </div>
+                        <div>
+                            <img class="carousel-img" src="images/main2.png" alt="趣味">
+                        </div>
+                        <div>
+                            <img class="carousel-img" src="images/main3.png" alt="趣味">
+                        </div>
+                    </div>
+                </section>
+
+                <section id="about" class="about-fadein">
+                    <h2>About</h2>
+                    <div class="about">
+                        <div class="about_img">
+                            <img src="images/about.png" alt="顔写真">
+                        </div>
+
+                        <div class="about_contents">
+
+                            <h3>Kazuki Asashina</h3>
+                            <ul>
+                                <li>25歳 長野県佐久市出身</li>
+                                <li>ソフトウェア業界でマーケティングに従事</li>
+                                <li>趣味はカメラ、愛機はCanon</li>
+                                <li>自然を撮影するのが好きで、海や山によく行く</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="works" class="works-fadein">
+                    <h2>Works</h2>
+                    <div class="works-container">
+                        <div class="works">
+                            <div class="works_img">
+                                <a href=""><img src="images/works1.png" alt="日本海"></a>
+                                <p>新潟に訪れた際に、日本海の雄大さに魅了されて撮影した1枚</p>
+                            </div>
+
+                            <div class="works_img">
+                                <a href=""><img src="images/works2.png" alt="御獄山"></a>
+                                <p>地元長野の木曽町から撮影した、冠雪した御嶽山</p>
+                            </div>
+
+                            <div class="works_img">
+                                <a href=""><img src="images/works3.png" alt="京都"></a>
+                                <p>京都で撮影した、朝方の古き良き日本の街並み</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- モーダル -->
+                <div class="modal">
+                    <div class="bigimg"><img src="" alt=""></div>
+                    <p class="close-btn"><a href="">×</a></p>
+                </div>
+            </article>
+        </main>
+
+        <footer>
+            <p>&copy; MyProfile.All rights reserved.</p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <!--slickの読み込み  -->
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="js/script.js"></script>
+    </div>
+</body>
+
+</html>
